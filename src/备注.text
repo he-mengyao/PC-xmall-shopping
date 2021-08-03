@@ -1,0 +1,4 @@
+1. cd xmall-serve
+2. npm run dev
+3. 把根路径放在浏览器运行，导入数据
+4. npm run serve
