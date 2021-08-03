@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_a {
+    justify-content: space-around;
+}
+
+.flex_c {
+    justify-content: center;
+}
+
+.flex_r {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex_1 {
+    flex: 1;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.ai_c {
+    align-items: center;
+}
+
+.ai_e {
+    align-items: flex-end;
+}
+
+.ac_c {
+    align-content: center;
+}
+
+.ac_b {
+    align-content: space-between;
+}
+
+.ac_a {
+    align-content: space-around;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.tac {
+    text-align: center;
+}
+
+.fw {
+    font-weight: 700;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pa-00 {
+    position: absolute;
+    top: 0;
+}
+
+.pf {
+    position: fixed;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.lh {
+    line-height: 100%;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f24 {
+    font-size: 24px !important;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f28 {
+    font-size: 28px;
+}
+
+.b0 {
+    border: 0;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    border: 0;
+}
+
+.text_overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.br {
+    border-radius: 100%;
+}
+
+.cw {
+    color: #fff;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.cb {
+    color: #000000;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    background-color: #ededed;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.w {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-96 {
+    color: #969696;
+}
+
+.c-64 {
+    color: #646464;
+}
+
+.c-c3 {
+    color: #c3c3c3;
+}
+
+.c-db {
+    color: #dbdbdd;
+}
+
+.blue {
+    color: #5e84e3;
+}
+
+.blue-hover:hover {
+    color: #5e84e3;
+}
+
+.mrt-20 {
+    margin-top: 20px;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.a-shadow:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.border {
+    border: 1px solid #e5e5e5;
+}
+
+.border-r {
+    border-right: 1px solid #e5e5e5;
+}
+
+.panel-title {
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    font-size: 18px;
+    color: #626262;
+}
+
+.col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mrt-35 {
+    margin-top: 35px;
+}
+
+.title {
+    color: #424242;
+    font-size: 16px;
+}
+
+.sub {
+    color: #d0d0d0;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.price {
+    color: #d44d44;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.move {
+    transition: all 0.5s linear;
+}
+
+.move:hover {
+    box-shadow: 1px 1px 20px #999;
+    transform: translateY(-3px);
+}
+
+.height-35 {
+    height: 35px;
+}
+
+.mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    &:hover {
+        box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.1);
+        transition: 0.15s linear;
+    }
+}
+
+.mrt-10 {
+    margin-top: 10px;
+}
+
+.br-5 {
+    border-radius: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 30px;
+    background-color: #ebebeb;
+}
+
+.look {
+    width: 100px;
+    height: 30px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    color: #666666;
+    margin-right: 10px;
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}
+
+.add {
+    width: 100px;
+    height: 30px;
+    background-color: #6889de;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    &:hover {
+        background-color: #617dc6;
+    }
+}
+
+.left-center {
+    display: flex;
+    align-items: center;
+}
+
+.good-item {
+    width: 305px;
+    height: 430px;
+    background-color: #fff;
+    img {
+        width: 206px;
+        height: 206px;
+    }
+}
+
+.btnhover {
+    .btn {
+        display: none;
+    }
+    &:hover {
+        .price {
+            display: none;
+        }
+        .btn {
+            display: block;
+        }
+    }
+}

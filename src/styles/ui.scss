@@ -1,0 +1,28 @@
+.login {
+    .el-input__inner {
+        height: 50px;
+        width: 100%;
+    }
+    .el-checkbox__inner {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+    }
+    .register-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.bg {
+    .el-carousel,
+    .el-carousel__container {
+        height: 500px !important;
+        .el-carousel__button {
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+        }
+    }
+}
