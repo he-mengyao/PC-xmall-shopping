@@ -107,16 +107,21 @@ export default {
     },
     clickNav(item, index) {
       this.num = index;
-      this.sort = item.sort;
+      if (item.sort === 0) {
+        this.sort = "";
+      } else {
+        this.sort = item.sort;
+      }
       this.getData();
     },
     getData() {
       if (this.priceGt === "" || this.priceLte === "") {
         axios
           .get(
-            `/api/goods/allGoods?page=${this.page}&size=${this.size}&sort=${this.sort}`
+            `/api//goods/allGoods?page=${this.page}&size=${this.size}&sort=${this.sort}`
           )
           .then((res) => {
+            // console.log(res);
             if (res.data.code === 200) {
               this.data = res.data.data;
               this.total = res.data.total;
@@ -129,13 +134,13 @@ export default {
       } else {
         axios
           .get(
-            `/api/goods/allGoods?page=${this.page}&size=${this.size}&sort=${this.sort}&priceGt=${this.priceGt}&priceLte=${this.priceLte}`
+            `/api//goods/allGoods?page=${this.page}&size=${this.size}&sort=${this.sort}&priceGt=${this.priceGt}&priceLte=${this.priceLte}`
           )
           .then((res) => {
             if (res.data.code === 200) {
               this.data = res.data.data;
               this.total = res.data.data.length;
-              // console.log(res.data);
+              console.log(res.data);
             }
           })
           .catch((err) => {

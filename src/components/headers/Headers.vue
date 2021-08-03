@@ -4,7 +4,7 @@
       <div class="logo center">M</div>
       <div class="flex">
         <div class="search center">
-          <el-input placeholder="请输入商品信息"></el-input>
+          <el-input v-model="input" placeholder="请输入商品信息"></el-input>
         </div>
         <div class="nav f14 cw flex ai_c">
           <div>全部商品</div>
@@ -26,7 +26,9 @@ export default {
   name: "",
   props: {},
   data() {
-    return {};
+    return {
+      input: "",
+    };
   },
   components: {},
   methods: {},
